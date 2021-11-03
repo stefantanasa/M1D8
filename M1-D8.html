@@ -102,7 +102,13 @@
 
       const addToTheSecond = function (content) {
         //
+        let addList = document.querySelectorAll("ul");
+        let listNode = document.createElement(content);
+        listNode.innerText =
+          "This is a new list added to the second unordered list";
+        addList[1].appendChild(listNode);
       };
+      addToTheSecond("li");
 
       /* EXERCISE 6
        Write a function for adding a second paragraph to the first div.
