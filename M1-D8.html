@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    <div>
+    <div id="footer" onclick="changeFooterText()">
       <p>And this text is just for the exercise too!</p>
       <h2 style="color: red">
         Save this page on your computer and open it with VSCode to get the
@@ -169,6 +169,13 @@
 
       const changeFooterText = function () {
         //
+
+        let removeFooter = document.getElementById("footer");
+        removeFooter.remove();
+        let parentForFooter = document.getElementsByTagName("div");
+        let NewFooter = document.createElement("div");
+        NewFooter.innerHTML = "<p>This is the new footer</p>";
+        parentForFooter[parentForFooter.length - 1].appendChild(NewFooter);
       };
 
       /* EXERCISE 11
