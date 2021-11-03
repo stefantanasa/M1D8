@@ -6,7 +6,7 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="onloadFunction()">
     <div>
       <h1 onclick="makeItClickable()" id="h1Click">
         This is the title of the page
@@ -191,6 +191,7 @@
 
       window.onload = function () {
         //
+        alert("Page successfully loaded");
       };
 
       /* EXERCISE 13
