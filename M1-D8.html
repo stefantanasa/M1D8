@@ -139,7 +139,13 @@
 
       const paintItGreen = function () {
         //
+        let unorderListNode = document.querySelectorAll("ul");
+        for (i = 0; i < unorderListNode.length; i++) {
+          unorderListNode[i].style.backgroundColor = "green";
+        }
       };
+
+      paintItGreen();
 
       /* EXERCISE 9
        Make the heading of the page change color every time the user clicks on it.
