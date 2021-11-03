@@ -129,8 +129,10 @@
 
       const firstUlDisappear = function () {
         //
+        let firstUlNode = document.querySelectorAll("ul");
+        firstUlNode[0].remove();
       };
-
+      firstUlDisappear();
       /* EXERCISE 8
        Write a function for making the background of every unordered list green.
       */
