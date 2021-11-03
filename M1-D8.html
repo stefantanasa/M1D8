@@ -68,7 +68,7 @@
       const addClassToTitle = function () {
         //
         let classChange = document.getElementsByTagName("h1");
-        classChange[0].classList.add += "myHeading";
+        classChange[0].classList += "myHeading";
       };
       addClassToTitle();
 
@@ -78,7 +78,12 @@
 
       const changePcontent = function () {
         //
+        let changeP = document.querySelectorAll("div p");
+        for (i = 0; i < changeP.length; i++) {
+          changeP[i].innerText = "Paragraphs have been changed";
+        }
       };
+      changePcontent();
 
       /* EXERCISE 4
        Write a function for changing the href property of every link to https://www.google.com
