@@ -91,7 +91,10 @@
 
       const changeUrls = function () {
         //
+        let changeLink = document.getElementsByTagName("a");
+        changeLink[0].href = "http://www.google.com";
       };
+      changeUrls();
 
       /* EXERCISE 5
        Write a function for adding a new list item in the second unordered list.
