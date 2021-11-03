@@ -113,10 +113,15 @@
       /* EXERCISE 6
        Write a function for adding a second paragraph to the first div.
       */
-
       const addParagraph = function (content) {
         //
+        let elementNode = document.querySelectorAll("div p");
+        let secPar = document.createElement(content);
+        secPar.innerText = "This is a second paragraph to the first div";
+        secPar.style.color = "coral";
+        elementNode[0].appendChild(secPar);
       };
+      addParagraph("p");
 
       /* EXERCISE 7
        Write a function for making the first unordered list disappear.
