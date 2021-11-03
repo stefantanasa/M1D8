@@ -8,7 +8,10 @@
   </head>
   <body>
     <div>
-      <h1>This is the title of the page</h1>
+      <h1 onclick="makeItClickable()" id="h1Click">
+        This is the title of the page
+      </h1>
+
       <h2>This is the subtitle of the page</h2>
     </div>
 
@@ -153,6 +156,11 @@
 
       const makeItClickable = function () {
         //
+        headingClickableNode = document.getElementById("h1Click");
+        let randColor = function () {
+          ranNumber = Math.floor(Math.random()) * 10;
+        };
+        headingClickableNode.style.color = "blue";
       };
 
       /* EXERCISE 10
